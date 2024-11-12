@@ -1,0 +1,58 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    border: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+@media h1{
+    
+}
+
+.name,
+.profile,
+.address,
+.contact,
+.shop,
+.shoptype,
+.baddress,
+.businesscontact,
+.docsubmission {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.inner {
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: max-content;
+}
+
+label {
+    display: block;
+    float: left;
+    width: 120px;
+    text-align: center;
+}
+
+input,
+select {
+    width: 400px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+input[type=checkbox] {
+    position: absolute;
+    width: 15px;
+}
+
+.docsubmission label {
+    width: 250px;
+    float: right;
+    position: absolute;
+}

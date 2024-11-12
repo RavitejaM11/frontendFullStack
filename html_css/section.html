@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Container for flexboxes */
+        section {
+            display: flex;
+        }
+
+        /* Style the navigation menu */
+        nav {
+            flex: 1;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Style the content */
+        article {
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+            section {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <script>
+        function showCityData(city) {
+            const article = document.getElementById('city-data');
+
+            if (city === 'London') {
+                article.innerHTML = `
+                    <h1>London</h1>
+                    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                `;
+            } else if (city === 'Paris') {
+                article.innerHTML = `
+                    <h1>Paris</h1>
+                    <p>Paris is the capital city of France, known for its art, fashion, and culture. It has a population of over 2 million residents.</p>
+                    <p>The city is famous for landmarks such as the Eiffel Tower, the Louvre Museum, and Notre-Dame Cathedral.</p>
+                `;
+            } else if (city === 'Tokyo') {
+                article.innerHTML = `
+                    <h1>Tokyo</h1>
+                    <p>Tokyo is the capital city of Japan and is known for its modern architecture, vibrant culture, and rich history.</p>
+                    <p>With a population of over 13 million, it is one of the most populous cities in the world.</p>
+                `;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<h2>CSS Layout Flexbox</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect.</p>
+
+<header>
+    <h2>Cities</h2>
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showCityData('London')">London</a></li>
+            <li><a href="#" onclick="showCityData('Paris')">Paris</a></li>
+            <li><a href="#" onclick="showCityData('Tokyo')">Tokyo</a></li>
+        </ul>
+    </nav>
+    
+    <article id="city-data">
+        <h1>London</h1>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    </article>
+</section>
+
+<footer>
+    <p>Footer</p>
+</footer>
+
+</body>
+</html>

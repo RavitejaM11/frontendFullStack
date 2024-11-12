@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron:wght@400..900&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap');
+
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    background-color: #1B244A;
+    align-items: center;
+}
+
+@media screen and (max-width:450px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+}
+
+#home, #guest {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: auto;
+    align-items: center;
+}
+
+#home-score, #guest-score {
+    display: flex;
+    justify-content: center;
+    color: tomato;
+    font-size: 16vw;
+    font-family: "Orbitron";
+    height: 20vw;
+    width: 20vw;
+    margin: 2vw;
+    background-color: black;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+#team {
+    text-align: center;
+    color: gray;
+    text-shadow: 2px 1px black;
+    font-size: 4vw;
+    display: flex;
+    margin: 0;
+}
+
+#buttons {
+    margin: 2px;
+    padding:5px;
+    text-align: center;
+}
+
+button {
+    background-color: #1B244A;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
