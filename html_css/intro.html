@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="Utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Soccer</title>
+        <style>
+            
+            #awards:hover   {
+                color:hsla(300,100%,50%,0.6)
+            }
+
+            table,th,tr,td  {
+                border-radius: 20px;
+            }
+
+            .block  { 
+                display: flex; 
+                flex-direction: column; 
+                width: 50% ; 
+                margin: auto; 
+                border: 2px solid black; 
+                float: left; 
+                height: 300px; 
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body style="background-color: azure; text-align: center;">
+        <header>
+            <h1 style="color: black;">Legend of <strong>7</strong></h1>
+        </header>
+        <section style="background-color: lightgray;">
+            <figure>
+                <img src="ronoldo.jpeg"  alt="Ronoldo" usemap="#Cristiano">
+            </figure>
+        </section>
+        <section>
+            <nav style="display: flex;">
+                <p  id="awards" style="font-size: large; padding: 10px; border: 1px solid white;"><a href="#rewards">Home</a></p>
+                <p  id="awards" style="font-size: large; padding: 10px; border: 1px solid white;"><a href="#rewards">Profile</a></p>
+                <p  id="awards" style="font-size: large; padding: 10px; border: 1px solid white;"><a href="#rewards">Awards</a></p>
+                <p  id="awards" style="font-size: large; padding: 10px; border: 1px solid white;"><a href="#rewards">About</a></p>
+            </nav>
+        </section>
+        <hr> <!--horizontal rules-->
+        <map name="Cristiano">
+            <area target="_blank" alt="Number7" title="Ronoldo"
+                 href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo" 
+                    coords="61,70,70,67,67,71,65,77,60,85,60,94,60,101,60,107" shape="poly">
+        <!--When we want the image to have multiple links based on our requirement example an 
+        image have multiple electronic devices, we can have them point to different url
+        by getting their coordinates and then mapping them.-->
+        </map>
+        <table id="rewards" style="margin: auto; width: 100%; background-color: greenyellow;padding:5px;">
+            <tr>
+            <th colspan="2" style="width: 100%;">Awards Received</th>
+            <tr>
+                <td style="width: 60px; background-color: aquamarine;">2008</td>
+                <td style="width: 40px; background-color:gold;">Ballon d'Or</td>
+            </tr>
+            <tr>
+                <td style="width: 60px; background-color: aquamarine;">2014</td>
+                <td style="width: 40px; background-color:gold;">Ballon d'Or</td>
+            </tr>
+            <tr>
+                <td style="width: 60px; background-color: aquamarine;">2015</td>
+                <td style="width: 40px; background-color:gold;">Ballon d'Or</td>
+            </tr>
+            <tr>
+                <td style="width: 60px; background-color: aquamarine;">2016</td>
+                <td style="width: 40px; background-color:gold;">Ballon d'Or</td>
+            </tr>
+            <tr>
+                <td style="width: 60px; background-color: aquamarine;">2017</td>
+                <td style="width: 40px; background-color:gold;">Ballon d'Or</td>
+            </tr>
+            <tr>
+                <td style="width: 60px; background-color: aquamarine;">2020</td>
+                <td style="width: 40px; background-color:gold;">Ballon d'Or</td>
+            </tr>
+        </table> 
+        <hr>
+        <div class="pagedivider" style="display:flex; width: 100%; overflow: auto;">
+            <div class="block" >
+                <p>block1</p>
+                <iframe src="index.html" style="display: block; width: 100%; height: 300px;border: none;"></iframe>
+            </div>
+            <div class="block" >
+                <p>block2</p>
+                <iframe  style="border: none; display: block; width: 100%; height: 300px;"
+                name="UserLink" title="userClickEx"></iframe>
+                <p>
+                    <a href="https://docs.google.com/document/d/1p_r7QpK4Yixdp57suXzc1CHsXihV3gg9LJDGWnuumy0/edit?tab=t.0" 
+                    target="UserLink">docs</a>
+                </p>
+                <fieldset>
+                    <legend>Personal Profile:</legend>
+                </fieldset>
+            </div>
+        </div>      
+    </body>
+</html>
+
