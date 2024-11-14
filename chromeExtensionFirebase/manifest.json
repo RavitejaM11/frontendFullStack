@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "version": "1.0.3",
+    "name": "Lead Storage Extension",
+    "action": {
+      "default_popup": "chromeExtension.html",
+      "default_icon": "hal.jpg"
+    },
+    "permissions": ["storage","tabs"]
+  }
+  
