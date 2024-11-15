@@ -47,12 +47,12 @@ delBtn.addEventListener("dblclick", function() {
     onValue(leadsInDB, function(snapshot) {
         if (snapshot.exists()) {
         let leads = Object.values(snapshot.val())
+        remove(leadsInDB)
         leads = []
         render(leads)
     }
 }
     )
-
 }
 )
 
