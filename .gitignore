@@ -1,3 +1,6 @@
+#vs code workspace
+html.code-workspace
+*workspace
 # OS-specific files
 .DS_Store
 Thumbs.db
