@@ -32,3 +32,9 @@ out/
 
 # macOS Finder metadata
 *.swp
+
+#next files
+.next/
+
+#sanbox files
+*-sandbox
